@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.background-image {
+    position: absolute;
+    right: 0;
+    width: 55vw; /* 60% din ecran */
+    min-height: 200vh;
+    background-image: url("assets/frida_background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1; /* Trimite imaginea în spate */
+
+}
+
+@media (max-width: 1024px) {
+    .background-image {
+        width: 100vw; /* Ocupă întreaga lățime */
+        height: 100vh; /* Ocupă întreaga înălțime */
+        background-position: center;
+    }
+}
+
+section{
+    display: flex;
+    height: 100vh;
+    min-height: 100vh;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.presentation{
+    padding: 2em 4em;
+    align-items: flex-start;
+    gap: 2em;
+
+}
+
+.artist{
+    padding: 4em;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.navigation{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 1em;
+    align-self: stretch;
+}
+
+.menu{
+    display: flex;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a{
+    color: #DA1B61;
+    font-family: Quicksand;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #DA1B61;
+
+    font-family: Quicksand;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-color: #DA1B61;
+
+    text-decoration-thickness: 25%; /* 6px */
+    text-underline-offset: 25%; /* 6px */
+    text-underline-position: from-font;
+    text-transform: uppercase;
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    flex: 1 0 0;
+    align-self: stretch;
+    width:70%;
+}
+
+.text-section h1{
+    align-self: stretch;
+    color: #000;
+    font-family: Quicksand;
+    font-size: 8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-section p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.theartist{
+    display: flex;
+    min-height: 100vh;
+    padding: 4em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    align-self: stretch;
+    background: rgba(248, 205, 24, 0.65);
+}
+
+.theartist p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h2{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
