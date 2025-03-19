@@ -7,32 +7,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <title>Artist Page</title>
 </head>
 <body>
-    <div class="background-image"></div>
 
-    <div class="content">
-        <section class="presentation">
-            <nav>
-                <ul class="navigation">
-                    <li class="menu"><a href="#the_artist">The artist</a></li>
-                    <li class="menu"><a href="#">The story</a></li>
-                    <li class="menu"><a href="#">The work</a></li>
-                </ul>
-            </nav>
-                    
+     <section class="presentation">
+        <nav>
+            <ul class="navigation">
+                <li class="menu"><a href="#the_artist">The artist</a></li>
+                <li class="menu"><a href="#the_story">The story</a></li>
+                <li class="menu"><a href="#">The work</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="image-container">
+                <img src="assets/frida.png" alt="Frida Kahlo">
+            </div>   
             <div class="text-section">
                 <h1>Frida Kahlo</h1>
                 <p>“Painting completed my life. I lost three children and a series of other things that would have fulfilled my horrible life. My painting took the place of all of this. I think work is the best.”</p>     
             </div>
+        </div>
         </section>
-        <section class="theartist" id="the_artist">
+        <section class="the_artist" id="the_artist">
             <h2>The artist</h2>
             <p>Fria Kahlo was a Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. She started painting after being impaled in a bus accident at age 18. Kahlo later became politically active and married fellow communist artist Diego Rivera. She’s admired today as a feminist icon.</p>
         </section>
-           
-     </div>
 
+        
+    
+        <section class="the_story" id="the_story">
+            <h2>The story</h2>
+            
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper-slide-img">
+                        <img src="assets/bio_1.png" />
+                    </div>
+                    <div class="swiper-slide-text">
+                        <div class="swiper-slide-title">
+                            <div class="title">JUNE 6, 1907</div>
+                            <div class="subtitle">BORN</div>
+                        </div>
+                        <div class="swiper-slide-description">
+                            Frieda Kahlo Calderon is  born as third daughter of Matilde Calderon de Kahlo, Mexican, and Wilhelm Kahlo, German, in Coyoacan, a suburb of Mexico City.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                
+                </div>
+            
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+            </div>
+            
+        </section>
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Swiper(".swiper", {
+                spaceBetween: 20,
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                }
+            });
+        });
+    </script>
 </body>
 </html>
