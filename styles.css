@@ -367,6 +367,10 @@ footer a{
         font-size: 1.5em;
     }
 
+    .menu{
+        padding: 0.25em;
+    }
+
     .menu a {
         font-size: 1em;
     }
@@ -383,6 +387,10 @@ footer a{
 
     .text-section p{
         font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 2.5em;
     }
 
 
