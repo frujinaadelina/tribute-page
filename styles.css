@@ -363,6 +363,10 @@ footer a{
         align-items: center;
     }
 
+    .the_artist p {
+        font-size: 1.5em;
+    }
+
     .menu a {
         font-size: 1em;
     }
