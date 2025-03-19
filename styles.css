@@ -356,7 +356,7 @@ footer a{
     .image-container img{
         object-fit: contain;
         height: auto;
-    }
+    } 
 
     .presentation{
         padding:2em;
