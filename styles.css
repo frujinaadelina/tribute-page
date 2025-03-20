@@ -434,10 +434,10 @@ footer a{
     }
 
     .text-section p, .the_artist p, .subtitle, .title{
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     .swiper-slide-description {
-        font-size: 0.75em;
+        font-size: 1em;
     }
   }
