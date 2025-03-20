@@ -357,6 +357,10 @@ footer a{
         justify-content: start;
     }
 
+    .swiper-slide-title {
+        align-items: center;
+    }
+
     .swiper-slide-img img {
         max-width: 80%;
         height: auto;
